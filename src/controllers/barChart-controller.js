@@ -60,7 +60,7 @@ const fetchPriceRangeItems = async (req, res) => {
                 }
             }
         ])
-        console.log("BarChartData", barChartData)
+     
         res.status(200).json({
             success: true,
             message: "Successfully fetched all items respective of price",

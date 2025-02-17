@@ -28,7 +28,7 @@ const fetchUniqueCategory = async (req, res) => {
             },
 
         ])
-        console.log(pieChartData)
+        
         res.status(200).json({
             success: true,
             message: 'Successfully fetched the unique category along with number of items.',
