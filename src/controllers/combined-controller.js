@@ -9,7 +9,7 @@ const fetchCombinedData = async(req,res) => {
     
     const transactionsData = await axios.get(`/transactions?month=${month}`, { baseURL: 'https://roxiler-backend-assignment-p406.onrender.com/api' });
     const statisticsData = await axios.get(`/statistics?month=${month}`, { baseURL: 'https://roxiler-backend-assignment-p406.onrender.com/api' }); 
-    const barChartData = await axios.get(`/bar-chart?month=${month}`, { baseURL: 'https://roxiler-backend-assignment-p406.onrender.com' }); 
+    const barChartData = await axios.get(`/bar-chart?month=${month}`, { baseURL: 'https://roxiler-backend-assignment-p406.onrender.com/api' }); 
     const pieChartData = await axios.get(`/pie-chart?month=${month}`, { baseURL: 'https://roxiler-backend-assignment-p406.onrender.com/api'}); 
 
     res.status(200).json({
