@@ -33,7 +33,7 @@ const allTransaction = async (req, res) => {
             message: "Successfully fetch all product transactions",
             transactions,
             page:parseInt(page),
-            perPage :parseInt(page)
+            perPage :parseInt(perPage)
 
         })
 
